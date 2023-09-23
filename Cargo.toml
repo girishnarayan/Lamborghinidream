@@ -1,0 +1,31 @@
+[package]
+name = "cross"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+
+
+[[bin]]
+name = "crosss"
+path = "./src/cross.rs"
+
+
+[target.'cfg(target_arch = "aarch64")']
+rustflags = ["-C", "link-arg=-Tlink64.ld"]
+
+
+[dependencies]
+
+rppal ="0.14.0"
+anyhow = "1.0.75"
+
+[profile.dev] #//profile used for cargo build//
+panic ="abort"
+[profile.release] #//profile used for cargo release//
+panic ="abort"
+
+[build-dependencies]
+cross = "0.2.5"
+cc = "1.0" 

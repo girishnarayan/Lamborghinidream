@@ -1,0 +1,8 @@
+[target.arm-unknown-linux-gnueabihf]
+linker="arm-poky-linux-gnueabi-gcc"
+rustflags = [
+"-C", "link-arg=-mcpu=cortex-a7 ",
+"-C", "link-arg=-mfpu=neon-vfpv4 ",
+"-C", "link-arg=-mfloat-abi=hard",
+"-C", "link-arg=--sysroot=/home/alpha/build/tmp/work/cortexa7t2hf-neon-vfpv4-poky-linux-gnueabi/meta-toolchain/1.0-r7/recipe-sysroot",
+]
