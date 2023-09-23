@@ -2,19 +2,16 @@
 name = "cross"
 version = "0.1.0"
 edition = "2021"
+description ="minimal"
+repository ="https://github.com/girishnarayan/Lamborghinidream.git"
+homepage ="https://github.com/girishnarayan/Lamborghinidream.git"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 
 
 [[bin]]
 name = "crosss"
 path = "./src/cross.rs"
-
-
-[target.'cfg(target_arch = "aarch64")']
-rustflags = ["-C", "link-arg=-Tlink64.ld"]
-
 
 [dependencies]
 
