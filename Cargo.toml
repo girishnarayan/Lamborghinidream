@@ -11,7 +11,7 @@ homepage ="https://github.com/girishnarayan/Lamborghinidream.git"
 
 
 [[bin]]
-name = "crosss"
+name = "cross"
 path = "./src/cross.rs"
 
 [dependencies]
