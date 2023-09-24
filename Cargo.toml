@@ -25,5 +25,5 @@ panic ="abort"
 panic ="abort"
 
 [build-dependencies]
-cross = "0.2.5"
+
 cc = "1.0" 
