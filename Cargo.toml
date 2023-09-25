@@ -4,8 +4,8 @@ version = "0.1.0"
 edition = "2021"
 description ="minimal"
 license = "Apache-2.0"
-repository ="https://github.com/girishnarayan/Lamborghinidream.git"
-homepage ="https://github.com/girishnarayan/Lamborghinidream.git"
+repository ="https://github.com/girishnarayan/Lamborghinidream.git;branch=master"
+homepage ="https://github.com/girishnarayan/Lamborghinidream.git;branch=master"
 
 
 
