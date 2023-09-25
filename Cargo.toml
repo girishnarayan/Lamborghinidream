@@ -23,8 +23,7 @@ anyhow = "1.0.75"
 
 [profile.dev] #//profile used for cargo build//
 panic ="abort"
-[profile.release] #//profile used for cargo release//
-panic ="abort"
+
 
 [build-dependencies]
 
